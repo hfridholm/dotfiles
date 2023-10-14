@@ -1,6 +1,6 @@
 # H4PE0N's dotfiles
 
-I manage my dotfiles with the help of a git bare repository, as it is super simple to track and update dotfiles, without having to , for example, create simlinks to every single dotfile. The inspiration for this technique came from [this video](https://www.youtube.com/watch?v=tBoLDpTWVOM) by DistoTube on YouTube.
+I manage my dotfiles with the help of a git bare repository, as it is super simple to track and update dotfiles, without having to, for example, create symlinks to every single dotfile. My inspiration for this technique came from [this video](https://www.youtube.com/watch?v=tBoLDpTWVOM) by DistoTube on YouTube.
 
 ## Set-by-step guide how to configure the dotfile repository
 
@@ -28,7 +28,7 @@ dotfiles config --local status.showUntrackedFiles no
 dotfiles remote add origin git@github.com:H4PE0N/dotfiles.git
 ```
 
-**Step 5:** Fetch everything from the remote repository on GitHub and set the master branch to track the remote branch.
+**Step 5:** Fetch everything from the remote repository on GitHub and set the master branch to track the remote.
 
 ```bash
 dotfiles fetch origin master && dotfiles branch --set-upstream-to=origin/master master
