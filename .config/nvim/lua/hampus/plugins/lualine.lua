@@ -5,7 +5,6 @@ return {
     lazy = true
   },
   config = function()
-    print("configuring lualine")
     local lualine = require("lualine")
 
     lualine.setup()
