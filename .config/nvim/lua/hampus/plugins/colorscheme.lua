@@ -11,7 +11,7 @@ return {
       },
     },
     config = function()
-      vim.cmd.colorscheme "tokyonight"
+
     end
   },
   {
@@ -25,6 +25,8 @@ return {
           comments = { "italic" }
         }
       })
+
+      vim.cmd.colorscheme "catppuccin"
     end
   }
 }
