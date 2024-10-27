@@ -4,8 +4,6 @@ return {
     "nvim-tree/nvim-web-devicons"
   },
   config = function()
-    local nvimtree = require("nvim-tree")
-
     -- disable netrw at the very start of your init.lua
     vim.g.loaded_netrw = 1
     vim.g.loaded_netrwPlugin = 1
@@ -14,7 +12,7 @@ return {
     vim.opt.termguicolors = true
 
     -- OR setup with some options
-    nvimtree.setup({
+    require("nvim-tree").setup({
       sort_by = "case_sensitive",
       view = {
         width = 40,
