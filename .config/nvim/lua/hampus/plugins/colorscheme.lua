@@ -1,17 +1,30 @@
 return {
-  "catppuccin/nvim", 
-  name = "catppuccin", 
-  priority = 1000,
-  config = function()
-    local catppuccin = require("catppuccin")
-
-    catppuccin.setup({
-      flavour = "mocha",
+  {
+    "tokyonight.nvim",
+    priority = 1000,
+    opts = {
+      transparent = true,
       styles = {
-        comments = { "italic" }
-      }
-    })
+         sidebars = "transparent",
+         floats = "transparent",
+      },
+    }
+  },
+  {
+    "catppuccin/nvim", 
+    name = "catppuccin", 
+    config = function()
+      local catppuccin = require("catppuccin")
 
-    vim.cmd.colorscheme "catppuccin"
-  end
+      catppuccin.setup({
+        transparent_background = true,
+        flavour = "mocha",
+        styles = {
+          comments = { "italic" }
+        }
+      })
+
+      vim.cmd.colorscheme "catppuccin"
+    end
+  }
 }
