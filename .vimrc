@@ -10,6 +10,7 @@ set spelllang=en_us
 set hlsearch
 set incsearch
 set splitright splitbelow
+set nocursorline
 
 " netrw
 let g:netrw_liststyle=3
