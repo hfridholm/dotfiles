@@ -12,8 +12,10 @@ mkdir $HOME/dotfiles && git init --bare --initial-branch=master $HOME/dotfiles
 
 **Step 2:** Add an alias called `dotfiles` to your `.bashrc` for managing the dotfiles repository.
 
+**Note:** This should not be necessary, because this should be added to bashrc.sh
+
 ```bash
-echo "alias dotfiles='/usr/bin/git --git-dir=$HOME/dotfiles --work-tree=$HOME'" >> $HOME/.bashrc
+echo 'alias dotfiles="/usr/bin/git --git-dir=$HOME/dotfiles --work-tree=$HOME"' >> $HOME/.bashrc
 ```
 
 **Step 3:** Configure the dotfiles repository to not show any file or folder, unless tracked specifically by you.
