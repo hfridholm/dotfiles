@@ -1,20 +1,6 @@
 # ~/bashrc.sh
-#
-# Add the following to .bashrc
-#
-# export ~/bashrc.sh
-#
 
 export PATH=$PATH:~/.local/bin
-
-# Utils
-
-UTILS_DIR=$HOME/Documents/Programming
-
-export PATH=$PATH:$UTILS_DIR/hashing/binary
-export PATH=$PATH:$UTILS_DIR/crypto/binary
-export PATH=$PATH:$UTILS_DIR/procom/binary
-export PATH=$PATH:$UTILS_DIR/bunker/binary
 
 # Powerline
 

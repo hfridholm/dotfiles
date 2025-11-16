@@ -17,3 +17,5 @@ vim.opt.iskeyword:append("-")
 vim.opt.termguicolors = true
 
 vim.opt.cursorline = false
+
+vim.g.rust_recommended_style = false
